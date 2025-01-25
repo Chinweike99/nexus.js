@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import styles from './page.module.css'
 
 const Navbar = () => {
   const navBar = [
@@ -18,10 +19,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div>
+      <div className={styles.navItems}>
         {navBar.map((clicks) => {
           return (
-            <div key={clicks.id}>
+            <div key={clicks.id} >
               <Link href={clicks.url}>{clicks.name}</Link>
             </div>
           );
