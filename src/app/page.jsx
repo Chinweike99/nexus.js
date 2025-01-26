@@ -26,7 +26,7 @@ export default function Home() {
             <p className={styles.desc}>
               Bringing you futuristic ideas of the tech industry
             </p>
-            <Button />
+            <Button url={"/portfolio"} text={"Know better"}/>
           </div>
 
 
