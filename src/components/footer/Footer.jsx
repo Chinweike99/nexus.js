@@ -7,7 +7,7 @@ const Footer = () => {
     <div className={styles.footer}>
         <div >chinweike 2025</div>
         <div>
-          <Image src={''} />
+          {/* <Image src={''} /> */}
         </div>
     </div>
   )

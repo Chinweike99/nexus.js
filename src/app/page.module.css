@@ -19,4 +19,41 @@
   background-size: cover;
   background-position: center;
   animation: changeBackground 15s infinite; /* 6s for 3 images, 2s per image */
+  border-radius: 1rem;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: var(--font-habibi);
+}
+.item, .divWithBg{
+  flex: 1;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.title{
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #cb0668, #de85cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button{
+  height: 2rem;
+  border: none;
+  /* background: #cb0668;
+  color: #fff; */
+  background: linear-gradient(to right, #cb0668, #cc4eb7);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 1rem auto; 
+  border-radius: 0.7rem;
+  cursor: pointer;
 }
