@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Habibi } from "next/font/google";
+import Button from "@/components/Button/Button";
 
 
 
@@ -25,7 +26,7 @@ export default function Home() {
             <p className={styles.desc}>
               Bringing you futuristic ideas of the tech industry
             </p>
-            <button className={styles.button}>Know more</button>
+            <Button />
           </div>
 
 
