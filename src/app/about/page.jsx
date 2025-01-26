@@ -3,11 +3,22 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import aboutpage from '../../../public/images/aboutpage.png'
 import Button from '@/components/Button/Button'
+import { Habibi } from "next/font/google";
+
+
+
+const habibi = Habibi({
+  weight: "400",
+  variable: "--font-habibi",
+  subsets: ["latin"],
+});
+
+
 
 const About = () => {
   return (
-    <div className={styles.aboutPage}>
-      <div>
+    <div className={`${styles.aboutPage} ${habibi.variable}`}>
+      <div  className={styles.imageContainer}>
         <Image src={aboutpage} alt='about page' fill={true}
         className={styles.img}
         />

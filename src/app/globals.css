@@ -7,6 +7,7 @@
     --primary-color: #cb0668;
     --primary-color2: #de85cf;
     --white-color: #fff;
+
   }
 }
 
@@ -14,6 +15,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-habibi);
 }
 * {
   box-sizing: border-box;

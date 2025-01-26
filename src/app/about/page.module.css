@@ -1,4 +1,44 @@
 .aboutPage{
-    background-color: aquamarine;
-    font-size: rgb(194, 119, 217);
+    /* background-color: aquamarine;
+    font-size: rgb(194, 119, 217); */
+    font-family: var(--font-habibi);
 }
+
+.imageContainer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.img{
+    object-fit: cover;
+}
+.img:hover{
+    filter: grayscale(100%);
+}
+.imgText{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--primary-color);
+    padding: 0.5rem 1rem;
+    color: var(--white-color);
+    border-radius: 1rem;
+}
+
+.textContainer{
+    display: flex;
+    gap: 100px;
+}
+.item{
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.desc{
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
