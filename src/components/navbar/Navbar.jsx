@@ -7,7 +7,7 @@ import styles from './page.module.css'
 const Navbar = () => {
   const navBar = [
     { id: 6, name: "Home", url: "/" },
-    { id: 1, name: "Potfolio", url: "/portfolio" },
+    { id: 1, name: "Portfolio", url: "/portfolio" },
     { id: 2, name: "Blog", url: "/blog" },
     { id: 3, name: "About", url: "/about" },
     { id: 4, name: "Contact", url: "/contact" },
