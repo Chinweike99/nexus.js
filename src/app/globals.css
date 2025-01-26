@@ -1,8 +1,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    /* --secondbackground: #fff; */
-    /* --foreground: #ededed; */
+    --secondbackground: #fff;
+    --foreground: #ededed;
 
     --primary-color: #cb0668;
     --primary-color2: #de85cf;
@@ -16,6 +16,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font-habibi);
+  background: #0a0a0a;
+  color: var(--white-color);
 }
 * {
   box-sizing: border-box;

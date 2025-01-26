@@ -18,8 +18,17 @@
   height: 25rem; /* Set your preferred height */
   background-size: cover;
   background-position: center;
-  animation: changeBackground 15s infinite; /* 6s for 3 images, 2s per image */
+  animation: changeBackground 15s infinite, move 2s infinite ease alternate; /* 6s for 3 images, 2s per image */
   border-radius: 1rem;
+}
+
+@keyframes move{
+  from{
+      transform: translateY(-15px);
+  }
+  to{
+      transform: translateY(0px) scale(1.03);
+  }
 }
 
 .home{
