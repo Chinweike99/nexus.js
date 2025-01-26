@@ -1,5 +1,26 @@
+.container{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: gray; */
+}
 .navItems{
     display: flex;
-    /* flex-direction: colum; */
-    background-color: blue;
+    align-items: center;
+    gap: 10px;
 }
+
+.logo{
+    font-weight: bold;
+    font-size: 24px;
+}
+.logout{
+    padding: 5px;
+    border: none;
+    background: #53c28b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+

@@ -19,15 +19,22 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={styles.navItems}>
-        {navBar.map((clicks) => {
-          return (
-            <div key={clicks.id} >
-              <Link href={clicks.url}>{clicks.name}</Link>
-            </div>
-          );
-        })}
-        <button onClick={(()=>{console.log("You are logged out")})}>Logout</button>
+      <div className={styles.container}>
+        <Link href={'/'} className={styles.logo}>nexus</Link>
+        <div className={styles.navItems}>
+          {navBar.map((clicks) => {
+            return (
+              <div key={clicks.id} >
+                <Link href={clicks.url} className={styles.links}>
+                  {clicks.name}
+                </Link>
+              </div>
+            );
+          })}
+          <button onClick={(()=>{console.log("You are logged out")})}className={styles.logout}>
+            Logout
+          </button>
+        </div>
       </div>
     </>
   );
