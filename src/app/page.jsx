@@ -20,7 +20,7 @@ export default function Home() {
       <div className={`${styles.home} ${habibi.variable}`}>
           <div className={styles.item}>
             <h1 className={styles.title}>
-              Don't be left out, be aware of the Digital Space.
+              Enjoy every moment like it was your last. <br />Make each moment count
             </h1>
             <p className={styles.desc}>
               Bringing you futuristic ideas of the tech industry
