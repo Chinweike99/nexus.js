@@ -1,0 +1,40 @@
+.category{
+    color: var(--primary-color);
+}
+.item{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.item:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.imgContainer{
+    flex: 1;
+    height: 70vh;
+    position: relative;
+    /* width: 90vw; */
+}
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img{
+    object-fit: cover;
+}
+
+.title{
+    font-size: 50px;
+}
+
+.description{
+    font-size: 20px;
+}
