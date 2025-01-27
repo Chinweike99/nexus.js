@@ -1,6 +1,7 @@
 import React from 'react'
 
-const BlogPost = () => {
+const BlogPost = ({params}) => {
+  console.log(params)
   return (
     <div>
         My Blog posts 

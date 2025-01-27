@@ -1,4 +1,21 @@
 .blog{
-    color: red;
-    font-size: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.image{
+    object-fit: cover;
+}
+.title{
+    margin-bottom: 10px;
+}
+.desc{
+    font-size: 18px;
+    color: var(--primary-color2);
 }

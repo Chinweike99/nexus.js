@@ -7,7 +7,7 @@ const Category = ({params}) => {
   console.log(params)
   return (
     <div className={styles.imgContainer}>
-        <h1 className={styles.category}>{params.category}</h1>
+        <h1 className={styles.catTitle}>{params.category}</h1>
         <div className={styles.item}>
           <div className={styles.content}>
             <h1 className={styles.title}>Testing</h1>
