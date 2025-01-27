@@ -12,13 +12,83 @@
     gap: 50px;
 }
 .item{
-    border: 5px solid #bbb;
+    border: 5px solid var(--primary-color);
     border-radius: 5px;
     width: 300px;
     height: 400px;
     position: relative;
     background-size: cover !important;
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
 }
+
+.item span{
+    background: var(--primary-color);
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+}
+
+@keyframes firstChild {
+    0% {
+      background-image: url('/images/extentedFamily.png');
+    }
+    50% {
+      background-image: url('/images/nuclearFam.png');
+    }
+    100% {
+      background-image: url('/images/dadKids.png');
+    }
+  }
+  
+
+.item:nth-child(1){
+  background-size: cover !important;
+  background-position: center;
+  animation: firstChild 15s infinite;
+  border-radius: 1rem;
+}
+
+@keyframes secondChild {
+    0% {
+      background-image: url('/images/students1.png');
+    }
+    50% {
+      background-image: url('/images/juniorStudents.png');
+    }
+    100% {
+      background-image: url('/images/school.png');
+    }
+  }
+  
+
+.item:nth-child(2){
+  background-size: cover !important;
+  background-position: center;
+  animation: secondChild 17s infinite;
+  border-radius: 1rem;
+}
+
+@keyframes thirdChild {
+    0% {
+      background-image: url('/images/travel.png');
+    }
+    50% {
+      background-image: url('/images/juniorStudents.png');
+    }
+    100% {
+      background-image: url('/images/nuclearFam.png');
+    }
+  }
+  
+
+.item:nth-child(3){
+  background-size: cover !important;
+  background-position: center;
+  animation: thirdChild 16s infinite;
+  border-radius: 1rem;
+}
+
+
 .title{
     position: absolute;
     right: 10px;
