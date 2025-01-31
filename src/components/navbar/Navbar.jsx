@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from './page.module.css'
+import Darkmode from "../DarkMode/Darkmode";
 
 const Navbar = () => {
   const navBar = [
@@ -22,6 +23,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <Link href={'/'} className={styles.logo}>nexus</Link>
         <div className={styles.navItems}>
+          <Darkmode />
           {navBar.map((clicks) => {
             return (
               <div key={clicks.id} >
