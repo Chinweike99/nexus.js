@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {next: {revalidate: 10}});
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {cache: "no-store"});
 
   if (!response.ok) {
     throw new Error("COuld not fetch data");
