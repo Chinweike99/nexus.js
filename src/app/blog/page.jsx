@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {cache: "no-store"});
+  const response = await fetch("http://localhost:3000/api/posts", {cache: "no-store"});
 
   if (!response.ok) {
     throw new Error("COuld not fetch data");
@@ -34,7 +34,7 @@ const Blog = async () => {
 
             <div>
               <h1 className={styles.title}>{post.title}</h1>
-              <p className={styles.desc}> {post.body}</p>
+              <p className={styles.desc}> {post.content}</p>
             </div>
           </Link>
         );

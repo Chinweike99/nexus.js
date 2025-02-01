@@ -7,3 +7,5 @@ const connect = async () =>{
         throw new Error(error)
     }
 }
+
+export default connect;
