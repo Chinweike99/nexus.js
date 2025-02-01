@@ -7,7 +7,7 @@ async function getData() {
   const response = await fetch("http://localhost:3000/api/posts", {cache: "no-store"});
 
   if (!response.ok) {
-    throw new Error("COuld not fetch data");
+    throw new Error("Could not fetch data");
   }
 
   return response.json();
@@ -21,10 +21,10 @@ const Blog = async () => {
       {
       data.map((post, index) => {
         return (
-          <Link href={"/blog/posts"} className={styles.container} key={index}>
+          <Link href={`/blog/${post._id}`} className={styles.container} key={index}>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/school.png"}
+                src={post.image}
                 alt="blog image"
                 width={400}
                 height={250}
@@ -34,7 +34,7 @@ const Blog = async () => {
 
             <div>
               <h1 className={styles.title}>{post.title}</h1>
-              <p className={styles.desc}> {post.content}</p>
+              <p className={styles.desc}> {post.desc}</p>
             </div>
           </Link>
         );
